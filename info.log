@@ -1,0 +1,16 @@
+{"message":"Bookmark with id c7671c6a-254f-4ff5-9005-9bb8044f18af created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/c7671c6a-254f-4ff5-9005-9bb8044f18af","level":"error"}
+{"message":"Bookmark with id c7671c6a-254f-4ff5-9005-9bb8044f18af not found","level":"error"}
+{"message":"Bookmark with id 855709d5-6670-4d98-9426-5c35315c23aa created","level":"info"}
+{"message":"Bookmark with id dd213cc8-4caf-4141-8a5d-14814aa87437 created","level":"info"}
+{"message":"Must be a valid URL","level":"error"}
+{"message":"Must be a valid URL","level":"error"}
+{"message":"Must be a valid URL","level":"error"}
+{"message":"Rating must be between 1 and 5","level":"error"}
+{"message":"Rating must be between 1 and 5","level":"error"}
+{"message":"Bookmark with id 3517c618-aa23-46c7-aa53-0cba3f72da96 created","level":"info"}
+{"message":"Must be a valid URL","level":"error"}
+{"message":"Bookmark with id e1ed4b12-8c9f-490b-a71b-14ede32dd34c created","level":"info"}
+{"message":"Bookmark with id e1ed4b12-8c9f-490b-a71b-14ede32dd34c not found.","level":"error"}
+{"message":"Bookmark with id 667e3c75-0d7b-4690-9caf-eae78ddb7353 created","level":"info"}
+{"message":"Bookmark with id 667e3c75-0d7b-4690-9caf-eae78ddb7353 deleted.","level":"info"}
