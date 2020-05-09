@@ -5,8 +5,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 const { v4: uuid } = require('uuid');
 const logger = require('./logger');
-const { bookmarks } = require('./store');
 const { NODE_ENV, API_TOKEN } = require('./config');
+const BookmarksService = require('./bookmarks-service');
 
 const app = express();
 
@@ -28,8 +28,14 @@ app.use(function validateBearerToken(req, res, next) {
   next();
 });
 
-app.get('/bookmarks', (req, res) => {
-  return res.json(bookmarks);
+app.get('/bookmarks', (req, res, next) => {
+  const knexInstance = req.app.get('db');
+
+  BookmarksService.getBookmarks(knexInstance)
+    .then((bookmarks) => {
+      res.json(bookmarks);
+    })
+    .catch(next);
 });
 
 app.post('/bookmarks', (req, res) => {
@@ -84,16 +90,20 @@ app.post('/bookmarks', (req, res) => {
     .json(bookmark);
 });
 
-app.get('/bookmarks/:id', (req, res) => {
-  const { id } = req.params;
-  const bookmark = bookmarks.find((b) => b.id == id);
+app.get('/bookmarks/:id', (req, res, next) => {
+  const knexInstance = req.app.get('db');
 
-  if (!bookmark) {
-    logger.error(`Bookmark with id ${id} not found`);
-    return res.status(404).send('Bookmark Not Found');
-  }
-
-  res.json(bookmark);
+  BookmarksService.getBookmarksById(knexInstance, req.params.id)
+    .then((bookmark) => {
+      if (!bookmark) {
+        logger.error(`Bookmark with id ${id} not found`);
+        return res.status(404).json({
+          error: { message: 'Bookmark Not Found' },
+        });
+      }
+      res.json(bookmark);
+    })
+    .catch(next);
 });
 
 app.delete('/bookmarks/:id', (req, res) => {
