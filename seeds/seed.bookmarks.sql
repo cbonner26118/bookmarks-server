@@ -1,62 +1,7 @@
-INSERT INTO bookmarks (title, url, rating, description)
+INSERT INTO bookmarks (title, url, description, rating)
 VALUES
-(
-        'Bookmark One',
-        'bookmarkone.com',
-        5,
-        'This is the first test bookmark'
-    ),
-    (
-        'Bookmark Two',
-        'bookmarktwo.com',
-        3,
-        'Second test'
-    ),
-    (
-        'Bookmark Three',
-        'bookmarkthree.com',
-        2,
-        'Thirdly test bookmark'
-    ),
-    (
-        'Bookmark four',
-        'bookmarkfour.com',
-        1,
-        'This is the fourth test bookmark'
-    ),
-    (
-        'Bookmark five',
-        'bookmarkfive.com',
-        4,
-        'This is the fifth test bookmark'
-    ),
-    (
-        'Bookmark six',
-        'bookmarksix.com',
-        5,
-        'This is the sixth test bookmark'
-    ),
-    (
-        'Bookmark seven',
-        'bookmarkseven.com',
-        5,
-        'This is the seventh test bookmark'
-    ),
-    (
-        'Bookmark ocho',
-        'bookmarkocho.com',
-        5,
-        'This is the eighth test bookmark'
-    ),
-    (
-        'Bookmark novo',
-        'bookmarksnovo.com',
-        5,
-        'This is the ninth test bookmark'
-    ),
-    (
-        'Bookmark dime',
-        'bookmarkdime.com',
-        5,
-        'This is the tenth test bookmark'
-    );
+('Thinkful', 'https://www.thinkful.com', 'Think outside the classroom', '5'),
+('Google', 'https://www.google.com', 'Where we find everything else', '4'),
+('MDN', 'https://developer.mozilla.org', 'The best place to find web documentation', '5'),
+('GitHub', 'https://www.github.com', 'Greatest hub of file transfers there is', '5'),
+('LinkedIn', 'https://www.linkedin.com', 'Networking, job searching, and professional social media', '4');
