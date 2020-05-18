@@ -659,3 +659,32 @@
 {"message":"Invalid rating 'invalid' supplied","level":"error"}
 {"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
 {"message":"Invalid url 'htp://invalid-url' supplied","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Invalid rating '5' supplied","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Invalid rating '5' supplied","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Invalid rating '5' supplied","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Bookmark with id 6 created.","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/6","level":"error"}
+{"message":"Bookmark with id 6 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/5","level":"error"}
+{"message":"Bookmark with id 5 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/1","level":"error"}
+{"message":"Bookmark with id 1 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"Bookmark with id 2 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/3","level":"error"}
+{"message":"Bookmark with id 3 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/4","level":"error"}
+{"message":"Bookmark with id 4 deleted.","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks","level":"error"}
+{"message":"Bookmark with id 7 created.","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/7","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/7","level":"error"}
